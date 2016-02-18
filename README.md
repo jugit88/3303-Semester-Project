@@ -1,6 +1,8 @@
 ## 3308-Semester-Project
-# James Draper, Drew Meyers, and Jeremy Udis.
-github ids: jugit88, drewmeyerscuboulder, james3d
+## Team Members:
+James Draper, Drew Meyers, and Jeremy Udis.
+## github ID's:
+jugit88, drewmeyerscuboulder, james3d
 
 ##Title:
 Air Quality InQuiry (AQIQ): Community-led Air Quality Measurements and Analysis
