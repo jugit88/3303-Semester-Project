@@ -1,7 +1,7 @@
 ## 3308-Semester-Project
 ## Team Members:
 James Draper, Drew Meyers, and Jeremy Udis.
-## github ID's:
+## Github ID's:
 jugit88, drewmeyerscuboulder, james3d
 
 ##Title:
@@ -18,12 +18,10 @@ AQIQ bridges the gap between citizens and scientists by providing communities wi
 ##Motivation: 
 The primary motivation of this project is to gather, analyze, and present data in form that is visually pleasing and intuitive to use. In this process we will learn valuable skills such as using and gathering data from an arduino and pushing the data to a database use to analzye the data. As a group we wanted to know more about javascript and D3 in order to present the data in a unique way.
 
-#Risks
--We will be working with a data visualization library that none of us have used.
--Everyone in the group is pretty new to javascript.
--Meeting up as a group can be difficult.
+##Risks
+We will be working with a data visualization library that none of us have used. Everyone in the group is pretty new to javascript. Meeting up as a group can be difficult.
 
-#Mitigation Strategy
+##Mitigation Strategy
 If there is a major problem we will meet as a group and reevaluate where we are and what we need to do.
 
 ##Requirements:
@@ -48,11 +46,11 @@ User Requirements: User will be able to upload a csv file which will then be sto
 | 14  | As a producer, I want to make a fast website, to improve user productivity   |6 
                                                                    
      
-#Methodology 
+##Methodology 
 We are going to use an Agile methodology to start.
 
-#Project Tracking Software
+##Project Tracking Software
 https://trello.com/aqiq
 
-#Project Plan
+##Project Plan
 https://trello.com/b/DfhxuGFe/project-plan
