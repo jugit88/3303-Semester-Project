@@ -1,4 +1,4 @@
-## CSCI 3308 Semester Project
+## CSCI-3308 Semester Project
 ## Team Members:
 James Draper, Drew Meyers, and Jeremy Udis.
 ## Github ID's:
