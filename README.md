@@ -1,6 +1,15 @@
 # 3308-Semester-Project
-# James, Drew, and Jeremy.
-github ids: jugit88/drewmeyerscuboulder/james3d
+# James Draper, Drew Meyers, and Jeremy Udis.
+github ids: jugit88, drewmeyerscuboulder, james3d
+
+Title: Air Quality InQuiry (AQIQ): Community-led Air Quality Measurements and Analysis
+
+Description:
+The Hannigan research group at the University of Colorado Boulder has been developing low cost air quality monitoring devices called “pods.” These pods are small, light weight, and easily deployable to almost any location around the world; they offer numerous advantages over larger, more expensive equipment. For example, pods can be deployed indoors to study the effects of air quality on human health in enclosed environments. With pods, researchers and citizens alike can get key information on air quality and use it to study the impact of indoor air quality on human health. Additionally, data taken from pods can supplement other air quality source data to create better resolution.
+
+Currently, the Hannigan lab does not provide a common place for their pod-users to store, share, and analyze pod data. Our team will create a user friendly web-interface for pod-users to store, share, and analyze air quality data collected by the pods.
+
+Vision Statement: AQIQ bridges the gap between citizens and scientists by providing communities with low-cost air quality data analysis tools.
 
 Movtivation: 
 The primary motivation of this project is to gather, analyze, and present data in form that is visually pleasing environment. In this process we will learn valuable skills such as using and gathering data from an arduino and pushing the data to a database use to analzye the data. As a group we wanted to know more about javascript and D3 in order to present the data in a unique way. 
