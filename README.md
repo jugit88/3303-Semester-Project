@@ -9,10 +9,11 @@ The Hannigan research group at the University of Colorado Boulder has been devel
 
 Currently, the Hannigan lab does not provide a common place for their pod-users to store, share, and analyze pod data. Our team will create a user friendly web-interface for pod-users to store, share, and analyze air quality data collected by the pods.
 
-Vision Statement: AQIQ bridges the gap between citizens and scientists by providing communities with low-cost air quality data analysis tools.
+Vision Statement:
+AQIQ bridges the gap between citizens and scientists by providing communities with low-cost air quality data analysis tools.
 
-Movtivation: 
-The primary motivation of this project is to gather, analyze, and present data in form that is visually pleasing environment. In this process we will learn valuable skills such as using and gathering data from an arduino and pushing the data to a database use to analzye the data. As a group we wanted to know more about javascript and D3 in order to present the data in a unique way. 
+Motivation: 
+The primary motivation of this project is to gather, analyze, and present data in form that is visually pleasing and intuitive to use. In this process we will learn valuable skills such as using and gathering data from an arduino and pushing the data to a database use to analzye the data. As a group we wanted to know more about javascript and D3 in order to present the data in a unique way.
 
 Requirements:
 User Requirements: User will be able to upload a csv file which will then be stored into the database. We will then query the database to output a JSON file in order to run Javascript based D3.
