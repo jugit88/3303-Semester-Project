@@ -7,6 +7,9 @@ jugit88, drewmeyerscuboulder, james3d
 ##Title:
 Air Quality InQuiry (AQIQ): Community-led Air Quality Measurements and Analysis
 
+##Current URL:
+http://ec2-52-26-114-13.us-west-2.compute.amazonaws.com/login-site/CSVimport.php
+
 ##Description:
 The Hannigan research group at the University of Colorado Boulder has been developing low cost air quality monitoring devices called “pods.” These pods are small, light weight, and easily deployable to almost any location around the world; they offer numerous advantages over larger, more expensive equipment. For example, pods can be deployed indoors to study the effects of air quality on human health in enclosed environments. With pods, researchers and citizens alike can get key information on air quality and use it to study the impact of indoor air quality on human health. Additionally, data taken from pods can supplement other air quality source data to create better resolution.
 
