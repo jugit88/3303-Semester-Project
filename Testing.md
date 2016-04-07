@@ -6,7 +6,7 @@
 AQIQ bridges the gap between citizens and scientists by providing communities with low-cost air quality data analysis tools.
 
 ###Automated Tests
-TODO
+Our goal was to test the login credentials in order to see if the user entered valid input in order to register at our site. You can find the test cases [here](https://github.com/jugit88/3308-Semester-Project/tree/master/Login)
 
 ####User Cases
 
