@@ -53,7 +53,7 @@ User Requirements: User will be able to upload a csv file which will then be sto
 We are going to use an Agile methodology to start.
 
 ##Project Tracking Software
-https://trello.com/aqiq
+[Trello](https://trello.com/aqiq)
 
 ##Project Plan
-https://trello.com/b/DfhxuGFe/project-plan
+[Layout](https://trello.com/b/DfhxuGFe/project-plan)
