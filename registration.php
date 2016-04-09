@@ -20,10 +20,19 @@
  $password = stripslashes($password);
  $password = mysql_real_escape_string($password);
  $trn_date = date("Y-m-d H:i:s");
+ $checkQuery = "SELECT count(*) from `users` where `username` = '$username'";
+ $findUser = mysql_query($checkQuery);
+ $userExists = mysql_result($findUser,0) > 0;
+ if ($userExists){
+ 	echo "<div class='form'><h3>Username already exists, choose another username.</h3><br/>Click here to <a href='registration.php'>Register</a></div>";
+ 	die();
+ }
+
  $query = "INSERT into `users` (username, password, email, trn_date) VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
  $result = mysql_query($query);
- if($result){
+ if($result and !$userExists){
  echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
+ 
  }
  }else{
 ?>
