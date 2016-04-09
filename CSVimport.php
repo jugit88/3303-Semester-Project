@@ -31,21 +31,59 @@ $requiredHeaders = array("Rtc Date","Rtc Time","BMP Temp(C)",
 $f = fopen($uploaded, 'r');
 $firstLine = fgets($f); //get first line of csv file
 fclose($f);
-
 $foundHeaders = str_getcsv(trim($firstLine), ',', '"'); //parse to array
-
 if ($foundHeaders !== $requiredHeaders) {
+	unlink($uploaded);
    die('.csv file does not match required format. Make sure youre uploading a valid POD file.<br>' . mysql_error());
 }
-
 else if($foundHeaders == $requiredHeaders){
+$temp = tmpfile();
+
+$f = fopen($uploaded, 'r');
+fgets($f);
+$lines = array();
+if($f !== false){
+	while(($data = fgetcsv($f, 8192, ",")) !== false) {
+		//echo $data;
+		$line = join(",", $data);
+		array_push($lines, $line);
+	 	//print_r($lines[0]);
+ 	}
+}
+
+//print_r($lines);
+$contents = "userid,session_id,Rtc Date,Rtc Time,BMP Temp(C),BMP Pres(mb),SHT25 Temp(C), SHT25 Humidity,CO2(ADC VAL),Wind Speed(mph), Wind Direction(deg),Quad-Aux-1(microVolts),Quad-Main-1(microVolts),Quad-Aux-2(microVolts),Quad-Main-2(microVolts),Quad-Aux-3(microVolts), Quad-Main-3(microVolts),Quad-Aux-4(microVolts),Quad-Main-4(microVolts), Fig 210 Heat(milliVolts),Fig 210 Sens(milliVolts),Fig 280 Heat(milliVolts),Fig 280 Sens(milliVolts),BL Moccon sens(milliVolts),ADC2 Channel-2(empty),E2VO3 Heat(milliVolts),E2VO3 Sens(milliVolts),GPS Date,GPS Time(UTC),Latitude,Longitude,Fix Quality,Altitude(meters above sea level,Statellites";
+
+// get userid from the db
+$activeUser = $_SESSION['username'];
+$uidQuery = "SELECT `id` from `users` where `username` = '$activeUser'";
+
+$res = mysql_query($uidQuery);
+if (mysql_num_rows($res) == 0) {
+    echo "No Id available for the given username";
+    exit;
+}
+$userid = mysql_fetch_assoc($res)['id'];
+
+// get session id from user uploaded log file
+$sessionid = '999';
+
+foreach($lines as $line => $value) $contents .= $userid . ',' . $sessionid . ',' . $value . "\r\n";
+
+$csvFile = "test_" . $userid . '_' . $sessionid . ".csv";
+file_put_contents($csvFile, $contents);
+
+unlink($uploaded);
+
+$uploaded = $csvFile;
+
 if (!empty($uploaded)) {
 	$query = "LOAD DATA LOCAL INFILE '" . $uploaded . "' INTO TABLE AQIQ_raw FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES ";
 	mysql_query($query) 
 		or die('Error Loading Data File.<br>' . mysql_error());
 	echo "Upload successful.";
 	if (is_file($uploaded)) {
-		unlink($uploaded );
+		//unlink($uploaded);
 	}
 
 	$processing1 = "SELECT MIN(`CO2 (ADC VAL)`), MIN(`Fig 210 Sens(milliVolts)`), 
