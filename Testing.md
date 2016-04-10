@@ -26,7 +26,7 @@ Frequency of Use|Up to user->Good idea to gather significant data prior|
 
 |Actor Action|System Response|Comments|
 --------------------------------|:-----------------------------------------:|:------------------------------:|
-|1.Register for a account|Won't know untill login|
+|1.Register for a account|Won't know until login|
 |2.Login with email+password|Take user to the home page|
 |3.Upload a formatted.csv file|Inform user if .csv is formatted correctly|must be .csv w/ right formatting
 |4.View visualization|Display visualization
