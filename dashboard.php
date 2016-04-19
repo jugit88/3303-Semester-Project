@@ -9,36 +9,51 @@ $dbhandle = mysql_connect($hostname, $username, $password)
 $selectdatabase = mysql_select_db("ypod",$dbhandle)
     or die("Could not select ypod database");
 
-$myquery = "SELECT `RTC time`, `CO2 (ADC VAL)` FROM `aqiq_raw`";
+/*$myquery = "SELECT `BMP Temp(C)`, `BMP Pres(mb)` FROM `aqiq_raw`";
+$query = mysql_query($myquery);
+if ( ! $query ) {
+	echo mysql_error();
+	die;
+}*/
+
+$myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
 $query = mysql_query($myquery);
 if ( ! $query ) {
 	echo mysql_error();
 	die;
 }
-$data = array();
+$rows = array();
+$rows['name'] = 'BMP Temp(C)';
+while($r = mysql_fetch_array($query)) {
+     $rows['data'][] = $r['BMP Temp(C)'];
+}
+
+$myquery = "SELECT `BMP Pres(mb)` FROM `aqiq_raw`";
+$query = mysql_query($myquery);
+if ( ! $query ) {
+	echo mysql_error();
+	die;
+}
+$rows1 = array();
+$rows1['name'] = 'BMP Pres(mb)';
+while($r = mysql_fetch_array($query)) {
+     $rows1['data'][] = $r['BMP Pres(mb)'];
+}
+
+/*$data = array();
 for ($x = 0; $x < mysql_num_rows($query); $x++) {
 	$data[] = mysql_fetch_assoc($query);
 }
-echo json_encode($data);
-mysql_close($dbhandle);
-?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Data Download and Visualization</title>
-<link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-<?php if (!empty($_GET[success])) { echo "<b>Your file has been imported.</b><br><br>"; } //generic success notice ?> 
-<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1"> 
-  <input type="submit" name="Submit" value="Submit" /> 
-</form>
+echo json_encode($data);*/
 
-<div class="form">
-<p>Pod data download to be added here.</p>
-<p><a href="CSVimport.php">Upload Raw Pod Data</a></p>
-<a href="logout.php">Logout</a>
-</div>
-</body>
-</html>
+$result = array();
+array_push($result,$rows);
+array_push($result,$rows1);
+
+print json_encode($result, JSON_NUMERIC_CHECK);
+
+mysql_close($dbhandle);
+
+
+
+?>
