@@ -16,28 +16,16 @@ if ( ! $query ) {
 	die;
 }*/
 
-$myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
+$myquery = "SELECT `SHT25 Humidity` FROM `aqiq_raw`";
 $query = mysql_query($myquery);
 if ( ! $query ) {
 	echo mysql_error();
 	die;
 }
 $rows = array();
-$rows['name'] = 'BMP Temp(C)';
+$rows['name'] = 'SHT25 Humidity';
 while($r = mysql_fetch_array($query)) {
-     $rows['data'][] = $r['BMP Temp(C)'];
-}
-
-$myquery = "SELECT `BMP Pres(mb)` FROM `aqiq_raw`";
-$query = mysql_query($myquery);
-if ( ! $query ) {
-	echo mysql_error();
-	die;
-}
-$rows1 = array();
-$rows1['name'] = 'BMP Pres(mb)';
-while($r = mysql_fetch_array($query)) {
-     $rows1['data'][] = $r['BMP Pres(mb)'];
+     $rows['data'][] = $r['SHT25 Humidity'];
 }
 
 /*$data = array();

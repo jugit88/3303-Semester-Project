@@ -17,22 +17,33 @@
     <![endif]-->
 </head>
 <body>
-<nav class="navbar navbar-default navbar-inverse">
+<nav class="navbar navbar-default navbar-inverse" role = "navigation">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#">YPOD</a></div>
+      <button type="button" class="navbar-toggle" 
+      data-toggle="collapse" data-target="#example-navbar-collapse"> 
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+      <a class="navbar-brand" href="#">YPOD</a>
+    </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html" target="_self">Home</a> </li>
         <li><a href="Products.html" target="_self">Products</a> </li>
         <li><a href="dataServices.php" target="_self">Data Services</a> </li>
         <li><a href="Aboutus.html" target="_self">About Us</a> </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+
+
+      <ul class="nav navbar-nav navbar-right navbar-header">
         <li ><a href="signup.php" target="_self">Sign up</a> </li>
         <li><a href="signin.php" target="_self">Sign In</a> </li>
       </ul>

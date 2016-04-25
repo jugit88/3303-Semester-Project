@@ -16,7 +16,7 @@ if ( ! $query ) {
 	die;
 }*/
 
-$myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
+/*$myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
 $query = mysql_query($myquery);
 if ( ! $query ) {
 	echo mysql_error();
@@ -26,18 +26,18 @@ $rows = array();
 $rows['name'] = 'BMP Temp(C)';
 while($r = mysql_fetch_array($query)) {
      $rows['data'][] = $r['BMP Temp(C)'];
-}
+}*/
 
-$myquery = "SELECT `BMP Pres(mb)` FROM `aqiq_raw`";
+$myquery = "SELECT `Fig 280 Sens(milliVolts)` FROM `aqiq_raw`";
 $query = mysql_query($myquery);
 if ( ! $query ) {
 	echo mysql_error();
 	die;
 }
 $rows1 = array();
-$rows1['name'] = 'BMP Pres(mb)';
+$rows1['name'] = 'Fig 280 Sens(milliVolts)';
 while($r = mysql_fetch_array($query)) {
-     $rows1['data'][] = $r['BMP Pres(mb)'];
+     $rows1['data'][] = $r['Fig 280 Sens(milliVolts)'];
 }
 
 /*$data = array();
