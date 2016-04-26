@@ -1,0 +1,68 @@
+\hypertarget{_s_h_t25___j_s_o_n_8php}{}\section{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php File Reference}
+\label{_s_h_t25___j_s_o_n_8php}\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_a8bf9ffb42ed554b203b55377d1fc9aa4}{\$hostname} = \char`\"{}localhost\char`\"{}
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username} = \char`\"{}root\char`\"{}
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password} = \char`\"{}hanniganlab\char`\"{}
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_a013f690a9cf598d1498e72aa8aa8a8d2}{\$dbhandle}
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_a3a00cb9dd022e8ab0cdfe17aad984a14}{\$selectdatabase}
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_a8ff37acfddb2efb7962bb94d1c6d0d1c}{\$myquery} = \char`\"{}S\+E\+L\+E\+CT `S\+H\+T25 Humidity` F\+R\+OM `aqiq\+\_\+raw`\char`\"{}
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query} = mysql\+\_\+query(\$myquery)
+\item 
+if(!\$query) \hyperlink{_s_h_t25___j_s_o_n_8php_a9d560e904e6665a6ee21f86a65c1ef8e}{\$rows} = array()
+\item 
+\hyperlink{_s_h_t25___j_s_o_n_8php_a6384d385f2f9c3f6bcad27ed87e67106}{\$rows} \mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]} = \textquotesingle{}S\+H\+T25 Humidity\textquotesingle{}
+\item 
+while(\$r=mysql\+\_\+fetch\+\_\+array(\$query)) \hyperlink{_s_h_t25___j_s_o_n_8php_a9148136d1e11f768be4f805d7e567da2}{\$result} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$dbhandle@{\$dbhandle}}
+\index{\$dbhandle@{\$dbhandle}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$dbhandle}{$dbhandle}}]{\setlength{\rightskip}{0pt plus 5cm}\$dbhandle}\hypertarget{_s_h_t25___j_s_o_n_8php_a013f690a9cf598d1498e72aa8aa8a8d2}{}\label{_s_h_t25___j_s_o_n_8php_a013f690a9cf598d1498e72aa8aa8a8d2}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= mysql\_connect(\hyperlink{_s_h_t25___j_s_o_n_8php_a8bf9ffb42ed554b203b55377d1fc9aa4}{$hostname}, \hyperlink{_s_h_t25___j_s_o_n_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{$username}, \hyperlink{_s_h_t25___j_s_o_n_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{$password})
+    or die("Unable to connect to MySQL")
+\end{DoxyCode}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$hostname@{\$hostname}}
+\index{\$hostname@{\$hostname}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$hostname}{$hostname}}]{\setlength{\rightskip}{0pt plus 5cm}\$hostname = \char`\"{}localhost\char`\"{}}\hypertarget{_s_h_t25___j_s_o_n_8php_a8bf9ffb42ed554b203b55377d1fc9aa4}{}\label{_s_h_t25___j_s_o_n_8php_a8bf9ffb42ed554b203b55377d1fc9aa4}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$myquery@{\$myquery}}
+\index{\$myquery@{\$myquery}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$myquery}{$myquery}}]{\setlength{\rightskip}{0pt plus 5cm}\$myquery = \char`\"{}S\+E\+L\+E\+CT `S\+H\+T25 Humidity` F\+R\+OM `aqiq\+\_\+raw`\char`\"{}}\hypertarget{_s_h_t25___j_s_o_n_8php_a8ff37acfddb2efb7962bb94d1c6d0d1c}{}\label{_s_h_t25___j_s_o_n_8php_a8ff37acfddb2efb7962bb94d1c6d0d1c}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$password@{\$password}}
+\index{\$password@{\$password}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$password}{$password}}]{\setlength{\rightskip}{0pt plus 5cm}\$password = \char`\"{}hanniganlab\char`\"{}}\hypertarget{_s_h_t25___j_s_o_n_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{}\label{_s_h_t25___j_s_o_n_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$query@{\$query}}
+\index{\$query@{\$query}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$query}{$query}}]{\setlength{\rightskip}{0pt plus 5cm}\$query = mysql\+\_\+query(\$myquery)}\hypertarget{_s_h_t25___j_s_o_n_8php_af59a5f7cd609e592c41dc3643efd3c98}{}\label{_s_h_t25___j_s_o_n_8php_af59a5f7cd609e592c41dc3643efd3c98}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$result@{\$result}}
+\index{\$result@{\$result}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$result}{$result}}]{\setlength{\rightskip}{0pt plus 5cm}while (\$r=mysql\+\_\+fetch\+\_\+array(\$query)) \$result = array()}\hypertarget{_s_h_t25___j_s_o_n_8php_a9148136d1e11f768be4f805d7e567da2}{}\label{_s_h_t25___j_s_o_n_8php_a9148136d1e11f768be4f805d7e567da2}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$rows}{$rows}}]{\setlength{\rightskip}{0pt plus 5cm}if (!\$query) \$rows = array()}\hypertarget{_s_h_t25___j_s_o_n_8php_a9d560e904e6665a6ee21f86a65c1ef8e}{}\label{_s_h_t25___j_s_o_n_8php_a9d560e904e6665a6ee21f86a65c1ef8e}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$rows}{$rows}}]{\setlength{\rightskip}{0pt plus 5cm}\$rows\mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]} = \textquotesingle{}S\+H\+T25 Humidity\textquotesingle{}}\hypertarget{_s_h_t25___j_s_o_n_8php_a6384d385f2f9c3f6bcad27ed87e67106}{}\label{_s_h_t25___j_s_o_n_8php_a6384d385f2f9c3f6bcad27ed87e67106}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$selectdatabase@{\$selectdatabase}}
+\index{\$selectdatabase@{\$selectdatabase}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$selectdatabase}{$selectdatabase}}]{\setlength{\rightskip}{0pt plus 5cm}\$selectdatabase}\hypertarget{_s_h_t25___j_s_o_n_8php_a3a00cb9dd022e8ab0cdfe17aad984a14}{}\label{_s_h_t25___j_s_o_n_8php_a3a00cb9dd022e8ab0cdfe17aad984a14}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= mysql\_select\_db(\textcolor{stringliteral}{"ypod"},\hyperlink{_s_h_t25___j_s_o_n_8php_a013f690a9cf598d1498e72aa8aa8a8d2}{$dbhandle})
+    or die("Could not select ypod database")
+\end{DoxyCode}
+\index{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}!\$username@{\$username}}
+\index{\$username@{\$username}!S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php@{S\+H\+T25\+\_\+\+J\+S\+O\+N.\+php}}
+\subsubsection[{\texorpdfstring{\$username}{$username}}]{\setlength{\rightskip}{0pt plus 5cm}\$username = \char`\"{}root\char`\"{}}\hypertarget{_s_h_t25___j_s_o_n_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{}\label{_s_h_t25___j_s_o_n_8php_a0eb82aa5f81cf845de4b36cd653c42cf}
