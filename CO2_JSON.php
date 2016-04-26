@@ -1,4 +1,15 @@
-<?php include("auth.php"); //include auth.php file on all secure pages 
+<?php 
+/*!@file CO2_JSON.php
+   * @brief Grab CO2 data from database.
+   * @details convert C02 Data to JSON format in order to use for data visualization.
+   * 
+   *
+   *  
+   */
+/*!
+ *@include auth.php
+ */
+include("auth.php");  
 $hostname = "localhost";
 $username = "root";
 $password = "hanniganlab";
