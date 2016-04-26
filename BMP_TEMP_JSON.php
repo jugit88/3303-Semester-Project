@@ -1,4 +1,12 @@
-<?php include("auth.php"); //include auth.php file on all secure pages 
+<?php 
+/*!@file BMP_TEMP_JSON.php
+   * @brief Grab Tempature data from database.
+   * @details convert TEMP Data to JSON format in order to use for data visualization.
+   * 
+   *
+   *  
+   */
+include("auth.php"); //include auth.php file on all secure pages 
 $hostname = "localhost";
 $username = "root";
 $password = "hanniganlab";
@@ -16,7 +24,7 @@ if ( ! $query ) {
 	die;
 }*/
 
-/*$myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
+$myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
 $query = mysql_query($myquery);
 if ( ! $query ) {
 	echo mysql_error();
@@ -26,19 +34,19 @@ $rows = array();
 $rows['name'] = 'BMP Temp(C)';
 while($r = mysql_fetch_array($query)) {
      $rows['data'][] = $r['BMP Temp(C)'];
-}*/
+}
 
-$myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
-$query = mysql_query($myquery);
-if ( ! $query ) {
-	echo mysql_error();
-	die;
-}
-$rows1 = array();
-$rows1['name'] = 'BMP Temp(C)';
-while($r = mysql_fetch_array($query)) {
-     $rows1['data'][] = $r['BMP Temp(C)'];
-}
+// $myquery = "SELECT `BMP Temp(C)` FROM `aqiq_raw`";
+// $query = mysql_query($myquery);
+// if ( ! $query ) {
+// 	echo mysql_error();
+// 	die;
+// }
+// $rows1 = array();
+// $rows1['name'] = 'BMP Temp(C)';
+// while($r = mysql_fetch_array($query)) {
+//      $rows1['data'][] = $r['BMP Temp(C)'];
+// }
 
 /*$data = array();
 for ($x = 0; $x < mysql_num_rows($query); $x++) {

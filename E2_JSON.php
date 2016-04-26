@@ -1,4 +1,12 @@
-<?php include("auth.php"); //include auth.php file on all secure pages 
+<?php 
+/*!@file E2_JSON.php
+   * @brief Grab EV02  data from database.
+   * @details convert Data to JSON format in order to use for data visualization.
+   * 
+   *
+   *  
+   */
+include("auth.php"); //include auth.php file on all secure pages 
 $hostname = "localhost";
 $username = "root";
 $password = "hanniganlab";

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,6 +52,25 @@
 </div>
 
 <?php
+/*! 
+ *  \mainpage
+ *  \brief     Documentation for AQIQ project.
+ *  \details   These docs contain the documentation for our project.
+ *  \author    Jeremy Udis
+ *  \author    Drew Meyers
+ *  \author    James Draper
+ *  \version   0.1
+ *  \date      2016
+ *  \pre       First initialize the system.
+ *  \bug       Some issues fetching the json data for certain fields.
+ *  \warning   Not a finished product.
+ *  \copyright GNU Public License.
+ */
+ /*!
+  *@file signin.php
+  *@brief sign in installment 
+  *@details make uses of post requests as well as sessions.MySQL+PHP is seamless. 
+  */
  require('db.php');
  session_start();
  // If form submitted, insert values into the database.

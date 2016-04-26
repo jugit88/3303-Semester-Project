@@ -51,6 +51,14 @@
 </div>
 
   <?php
+  /*!@file signup.php
+   * @brief allow for users to sign up.
+   *
+   *
+   *
+   *
+   */
+
  require('db.php');
  // If form submitted, insert values into the database.
  if (isset($_POST['username'])){

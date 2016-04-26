@@ -1,4 +1,12 @@
-<?php include("auth.php"); //include auth.php file on all secure pages 
+<?php 
+/*!@file BMP_JSON.php
+   * @brief Grab Air Pressure data from database.
+   * @details convert Pressure Data to JSON format in order to use for data visualization.
+   * 
+   *
+   *  
+   */
+include("auth.php"); //include auth.php file on all secure pages 
 $hostname = "localhost";
 $username = "root";
 $password = "hanniganlab";
