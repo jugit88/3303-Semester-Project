@@ -8,7 +8,7 @@ jugit88, drewmeyerscuboulder, james3d
 Air Quality InQuiry (AQIQ): Community-led Air Quality Measurements and Analysis
 
 ##Current URL:
-[project website](http://ec2-52-26-114-13.us-west-2.compute.amazonaws.com/login-site/login.php)
+[project website](http://ec2-52-26-114-13.us-west-2.compute.amazonaws.com/3308-Semester-Project/signin.php)
 
 ##NOTE
 We worked on this project as a group from a remote desktop. James just so happened to be signed into github in the shell, so all the commits went to him. WE ALL WORKED ON THIS PROJECT TOGETHER.
