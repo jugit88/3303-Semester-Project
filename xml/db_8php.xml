@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="db_8php" kind="file" language="PHP">
+    <compoundname>db.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="db_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$connection</definition>
+        <argsstring></argsstring>
+        <name>$connection</name>
+        <initializer>= mysql_connect(&quot;localhost&quot;, &quot;root&quot;, &quot;hanniganlab&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="db.php" line="2" column="1" bodyfile="db.php" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db_8php_1ae4ab08279bc5a147a42eb8409feece2e" prot="public" static="no" mutable="no">
+        <type>if(!$connection)</type>
+        <definition>if (!$connection) $select_db</definition>
+        <argsstring></argsstring>
+        <name>$select_db</name>
+        <initializer>= mysql_select_db(&apos;ypod&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="db.php" line="6" column="1" bodyfile="db.php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><ref refid="db_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0" kindref="member">$connection</ref><sp/>=<sp/>mysql_connect(</highlight><highlight class="stringliteral">&quot;localhost&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;hanniganlab&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="db_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0" kindref="member">$connection</ref>){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/>die(</highlight><highlight class="stringliteral">&quot;Database<sp/>Connection<sp/>Failed&quot;</highlight><highlight class="normal"><sp/>.<sp/>mysql_error());</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="db_8php_1ae4ab08279bc5a147a42eb8409feece2e" kindref="member">$select_db</ref><sp/>=<sp/>mysql_select_db(</highlight><highlight class="stringliteral">&apos;ypod&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="db_8php_1ae4ab08279bc5a147a42eb8409feece2e" kindref="member">$select_db</ref>){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/>die(</highlight><highlight class="stringliteral">&quot;Database<sp/>Selection<sp/>Failed&quot;</highlight><highlight class="normal"><sp/>.<sp/>mysql_error());</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="db.php"/>
+  </compounddef>
+</doxygen>

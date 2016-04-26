@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>CSCI-3308<sp/>Semester<sp/>Project</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Team<sp/>Members:</highlight></codeline>
+<codeline><highlight class="normal">James<sp/>Draper,<sp/>Drew<sp/>Meyers,<sp/>and<sp/>Jeremy<sp/>Udis.</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Github<sp/>ID&apos;s:</highlight></codeline>
+<codeline><highlight class="normal">jugit88,<sp/>drewmeyerscuboulder,<sp/>james3d</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Title:</highlight></codeline>
+<codeline><highlight class="normal">Air<sp/>Quality<sp/>InQuiry<sp/>(AQIQ):<sp/>Community-led<sp/>Air<sp/>Quality<sp/>Measurements<sp/>and<sp/>Analysis</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Current<sp/>URL:</highlight></codeline>
+<codeline><highlight class="normal">[project<sp/>website](http://ec2-52-26-114-13.us-west-2.compute.amazonaws.com/login-site/login.php)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##NOTE</highlight></codeline>
+<codeline><highlight class="normal">We<sp/>worked<sp/>on<sp/>this<sp/>project<sp/>as<sp/>a<sp/>group<sp/>from<sp/>a<sp/>remote<sp/>desktop.<sp/>James<sp/>just<sp/>so<sp/>happened<sp/>to<sp/>be<sp/>signed<sp/>into<sp/>github<sp/>in<sp/>the<sp/>shell,<sp/>so<sp/>all<sp/>the<sp/>commits<sp/>went<sp/>to<sp/>him.<sp/>WE<sp/>ALL<sp/>WORKED<sp/>ON<sp/>THIS<sp/>PROJECT<sp/>TOGETHER.</highlight></codeline>
+<codeline><highlight class="normal">##Description:</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>Hannigan<sp/>research<sp/>group<sp/>at<sp/>the<sp/>University<sp/>of<sp/>Colorado<sp/>Boulder<sp/>has<sp/>been<sp/>developing<sp/>low<sp/>cost<sp/>air<sp/>quality<sp/>monitoring<sp/>devices<sp/>called<sp/>“pods.”<sp/>These<sp/>pods<sp/>are<sp/>small,<sp/>light<sp/>weight,<sp/>and<sp/>easily<sp/>deployable<sp/>to<sp/>almost<sp/>any<sp/>location<sp/>around<sp/>the<sp/>world;<sp/>they<sp/>offer<sp/>numerous<sp/>advantages<sp/>over<sp/>larger,<sp/>more<sp/>expensive<sp/>equipment.<sp/>For<sp/>example,<sp/>pods<sp/>can<sp/>be<sp/>deployed<sp/>indoors<sp/>to<sp/>study<sp/>the<sp/>effects<sp/>of<sp/>air<sp/>quality<sp/>on<sp/>human<sp/>health<sp/>in<sp/>enclosed<sp/>environments.<sp/>With<sp/>pods,<sp/>researchers<sp/>and<sp/>citizens<sp/>alike<sp/>can<sp/>get<sp/>key<sp/>information<sp/>on<sp/>air<sp/>quality<sp/>and<sp/>use<sp/>it<sp/>to<sp/>study<sp/>the<sp/>impact<sp/>of<sp/>indoor<sp/>air<sp/>quality<sp/>on<sp/>human<sp/>health.<sp/>Additionally,<sp/>data<sp/>taken<sp/>from<sp/>pods<sp/>can<sp/>supplement<sp/>other<sp/>air<sp/>quality<sp/>source<sp/>data<sp/>to<sp/>create<sp/>better<sp/>resolution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Currently,<sp/>the<sp/>Hannigan<sp/>lab<sp/>does<sp/>not<sp/>provide<sp/>a<sp/>common<sp/>place<sp/>for<sp/>their<sp/>pod-users<sp/>to<sp/>store,<sp/>share,<sp/>and<sp/>analyze<sp/>pod<sp/>data.<sp/>Our<sp/>team<sp/>will<sp/>create<sp/>a<sp/>user<sp/>friendly<sp/>web-interface<sp/>for<sp/>pod-users<sp/>to<sp/>store,<sp/>share,<sp/>and<sp/>analyze<sp/>air<sp/>quality<sp/>data<sp/>collected<sp/>by<sp/>the<sp/>pods.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Vision<sp/>Statement:</highlight></codeline>
+<codeline><highlight class="normal">AQIQ<sp/>bridges<sp/>the<sp/>gap<sp/>between<sp/>citizens<sp/>and<sp/>scientists<sp/>by<sp/>providing<sp/>communities<sp/>with<sp/>low-cost<sp/>air<sp/>quality<sp/>data<sp/>analysis<sp/>tools.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Motivation:<sp/></highlight></codeline>
+<codeline><highlight class="normal">The<sp/>primary<sp/>motivation<sp/>of<sp/>this<sp/>project<sp/>is<sp/>to<sp/>gather,<sp/>analyze,<sp/>and<sp/>present<sp/>data<sp/>in<sp/>form<sp/>that<sp/>is<sp/>visually<sp/>pleasing<sp/>and<sp/>intuitive<sp/>to<sp/>use.<sp/>In<sp/>this<sp/>process<sp/>we<sp/>will<sp/>learn<sp/>valuable<sp/>skills<sp/>such<sp/>as<sp/>using<sp/>and<sp/>gathering<sp/>data<sp/>from<sp/>an<sp/>arduino<sp/>and<sp/>pushing<sp/>the<sp/>data<sp/>to<sp/>a<sp/>database<sp/>use<sp/>to<sp/>analzye<sp/>the<sp/>data.<sp/>As<sp/>a<sp/>group<sp/>we<sp/>wanted<sp/>to<sp/>know<sp/>more<sp/>about<sp/>javascript<sp/>and<sp/>D3<sp/>in<sp/>order<sp/>to<sp/>present<sp/>the<sp/>data<sp/>in<sp/>a<sp/>unique<sp/>way.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Risks</highlight></codeline>
+<codeline><highlight class="normal">We<sp/>will<sp/>be<sp/>working<sp/>with<sp/>a<sp/>data<sp/>visualization<sp/>library<sp/>that<sp/>none<sp/>of<sp/>us<sp/>have<sp/>used.<sp/>Everyone<sp/>in<sp/>the<sp/>group<sp/>is<sp/>pretty<sp/>new<sp/>to<sp/>javascript.<sp/>Meeting<sp/>up<sp/>as<sp/>a<sp/>group<sp/>can<sp/>be<sp/>difficult.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Mitigation<sp/>Strategy</highlight></codeline>
+<codeline><highlight class="normal">If<sp/>there<sp/>is<sp/>a<sp/>major<sp/>problem<sp/>we<sp/>will<sp/>meet<sp/>as<sp/>a<sp/>group<sp/>and<sp/>reevaluate<sp/>where<sp/>we<sp/>are<sp/>and<sp/>what<sp/>we<sp/>need<sp/>to<sp/>do.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Requirements:</highlight></codeline>
+<codeline><highlight class="normal">User<sp/>Requirements:<sp/>User<sp/>will<sp/>be<sp/>able<sp/>to<sp/>upload<sp/>a<sp/>csv<sp/>file<sp/>which<sp/>will<sp/>then<sp/>be<sp/>stored<sp/>into<sp/>the<sp/>database.<sp/>We<sp/>will<sp/>then<sp/>query<sp/>the<sp/>database<sp/>to<sp/>output<sp/>a<sp/>JSON<sp/>file<sp/>in<sp/>order<sp/>to<sp/>run<sp/>Javascript<sp/>based<sp/>D3.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Functional<sp/>Requirements:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|Id:<sp/><sp/>|Description:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|Time(hours)|</highlight></codeline>
+<codeline><highlight class="normal">|----|:----------------------------------------------------------------------:|----:|</highlight></codeline>
+<codeline><highlight class="normal">|1<sp/><sp/><sp/>|As<sp/>a<sp/>learner,<sp/>I<sp/>want<sp/>learn<sp/>arduino,<sp/>so<sp/>that<sp/>I<sp/>can<sp/>add<sp/>wifi<sp/>capabilities<sp/><sp/>|6<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|2<sp/><sp/><sp/>|As<sp/>a<sp/>developer,<sp/>I<sp/>want<sp/>to<sp/>query<sp/>a<sp/>database,<sp/>so<sp/>that<sp/>I<sp/>can<sp/>gather<sp/>data<sp/><sp/><sp/><sp/>|4<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">|3<sp/><sp/><sp/>|As<sp/>a<sp/>developer,<sp/>I<sp/>want<sp/>to<sp/>learn<sp/>the<sp/>D3<sp/>library,<sp/>so<sp/>I<sp/>can<sp/>make<sp/>visuals<sp/><sp/><sp/><sp/>|8<sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|4<sp/><sp/><sp/>|As<sp/>a<sp/>developer,<sp/>I<sp/>want<sp/>to<sp/>learn<sp/>Javacript,<sp/>so<sp/>I<sp/>can<sp/>use<sp/>D3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|8<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">##Non-Functional<sp/>Requirements:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Id:<sp/><sp/><sp/><sp/><sp/>|Description:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Time(hours)|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>-------|:---------------------------------------------------------------------:|----:|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>11<sp/><sp/>|<sp/>As<sp/>a<sp/>team,<sp/>we<sp/>want<sp/>to<sp/>have<sp/>a<sp/>website<sp/>to<sp/>upload<sp/>csv<sp/>files.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|8<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">|<sp/>12<sp/><sp/>|<sp/>As<sp/>a<sp/>team,<sp/>we<sp/>want<sp/>query<sp/>a<sp/>database<sp/>in<sp/>order<sp/>to<sp/>make<sp/>D3<sp/>visuals.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>13<sp/><sp/>|<sp/>As<sp/>a<sp/>team,<sp/>we<sp/>want<sp/>to<sp/>work<sp/>as<sp/>a<sp/>team<sp/>to<sp/>create<sp/>a<sp/>friendy<sp/>environment.<sp/><sp/><sp/><sp/>|NA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>14<sp/><sp/>|<sp/>As<sp/>a<sp/>producer,<sp/>I<sp/>want<sp/>to<sp/>make<sp/>a<sp/>fast<sp/>website,<sp/>to<sp/>improve<sp/>user<sp/>productivity<sp/><sp/><sp/>|6<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">##Methodology<sp/></highlight></codeline>
+<codeline><highlight class="normal">We<sp/>are<sp/>going<sp/>to<sp/>use<sp/>an<sp/>Agile<sp/>methodology<sp/>to<sp/>start.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Project<sp/>Tracking<sp/>Software</highlight></codeline>
+<codeline><highlight class="normal">[Trello](https://trello.com/aqiq)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Project<sp/>Plan</highlight></codeline>
+<codeline><highlight class="normal">[Layout](https://trello.com/b/DfhxuGFe/project-plan)</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

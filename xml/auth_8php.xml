@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="auth_8php" kind="file" language="PHP">
+    <compoundname>auth.php</compoundname>
+    <briefdescription>
+<para>Session implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="authors"><para>Drew Meyers Jeremy Udis James Draper</para></simplesect>
+This implementation takes advantage of cookies. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">session_start();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isset($_SESSION[</highlight><highlight class="stringliteral">&quot;username&quot;</highlight><highlight class="normal">])){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Location:<sp/>signin.php&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">exit();<sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="auth.php"/>
+  </compounddef>
+</doxygen>

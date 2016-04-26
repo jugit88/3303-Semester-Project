@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="signup_8php" kind="file" language="PHP">
+    <compoundname>signup.php</compoundname>
+    <briefdescription>
+<para>allow for users to sign up. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;!DOCTYPE<sp/>html&gt;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">&lt;html<sp/>lang=</highlight><highlight class="stringliteral">&quot;en&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">&lt;head&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">&lt;meta<sp/>charset=</highlight><highlight class="stringliteral">&quot;utf-8&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">&lt;meta<sp/>http-equiv=</highlight><highlight class="stringliteral">&quot;X-UA-Compatible&quot;</highlight><highlight class="normal"><sp/>content=</highlight><highlight class="stringliteral">&quot;IE=edge&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">&lt;meta<sp/>name=</highlight><highlight class="stringliteral">&quot;viewport&quot;</highlight><highlight class="normal"><sp/>content=</highlight><highlight class="stringliteral">&quot;width=device-width,<sp/>initial-scale=1&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">&lt;title&gt;ypod&lt;/title&gt;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">&lt;!--<sp/>Bootstrap<sp/>--&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">&lt;link<sp/>rel=</highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"><sp/>href=</highlight><highlight class="stringliteral">&quot;css/bootstrap.css&quot;</highlight><highlight class="normal"><sp/>/&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">&lt;!--<sp/>HTML5<sp/>shim<sp/>and<sp/>Respond.js<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>IE8<sp/>support<sp/>of<sp/>HTML5<sp/>elements<sp/>and<sp/>media<sp/>queries<sp/>--&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">&lt;!--<sp/>WARNING:<sp/>Respond.js<sp/>doesn</highlight><highlight class="stringliteral">&apos;t<sp/>work<sp/>if<sp/>you<sp/>view<sp/>the<sp/>page<sp/>via<sp/>file://<sp/>--&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">&lt;!--[if<sp/>lt<sp/>IE<sp/>9]&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>src=&quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;![endif]--&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral">&lt;/head&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral">&lt;body&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral">&lt;nav<sp/>class=&quot;navbar<sp/>navbar-default<sp/>navbar-inverse&quot;&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/>&lt;div<sp/>class=&quot;container-fluid&quot;&gt;<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;!--<sp/>Brand<sp/>and<sp/>toggle<sp/>get<sp/>grouped<sp/>for<sp/>better<sp/>mobile<sp/>display<sp/>--&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;navbar-header&quot;&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;button<sp/>type=&quot;button&quot;<sp/>class=&quot;navbar-toggle<sp/>collapsed&quot;<sp/>data-toggle=&quot;collapse&quot;<sp/>data-target=&quot;#bs-example-navbar-collapse-1&quot;<sp/>aria-expanded=&quot;false&quot;&gt;<sp/>&lt;span<sp/>class=&quot;sr-only&quot;&gt;Toggle<sp/>navigation&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<sp/>&lt;/button&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>class=&quot;navbar-brand&quot;<sp/>href=&quot;#&quot;&gt;YPOD&lt;/a&gt;&lt;/div&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;!--<sp/>Collect<sp/>the<sp/>nav<sp/>links,<sp/>forms,<sp/>and<sp/>other<sp/>content<sp/>for<sp/>toggling<sp/>--&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;collapse<sp/>navbar-collapse&quot;<sp/>id=&quot;bs-example-navbar-collapse-1&quot;&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul<sp/>class=&quot;nav<sp/>navbar-nav&quot;&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;index.html&quot;<sp/>target=&quot;_self&quot;&gt;Home&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;Products.html&quot;<sp/>target=&quot;_self&quot;&gt;Products&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;dataServices.php&quot;<sp/>target=&quot;_self&quot;&gt;Data<sp/>Services&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;Aboutus.html&quot;<sp/>target=&quot;_self&quot;&gt;About<sp/>Us&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul<sp/>class=&quot;nav<sp/>navbar-nav<sp/>navbar-right&quot;&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li<sp/>class=&quot;active&quot;&gt;&lt;a<sp/>href=&quot;signup.php&quot;<sp/>target=&quot;_self&quot;&gt;Sign<sp/>up&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;signin.php&quot;<sp/>target=&quot;_self&quot;&gt;Sign<sp/>In&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;!--<sp/>/.navbar-collapse<sp/>--&gt;<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/>&lt;!--<sp/>/.container-fluid<sp/>--&gt;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral">&lt;/nav&gt;</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral">&lt;div<sp/>class=&quot;container&quot;&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>&lt;div&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral">&lt;div<sp/>class=&quot;input-group&quot;&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;input-group&quot;&gt;<sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/>&lt;?php</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/>require(&apos;</highlight><highlight class="normal">db.php</highlight><highlight class="stringliteral">&apos;);</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/>//<sp/>If<sp/>form<sp/>submitted,<sp/>insert<sp/>values<sp/>into<sp/>the<sp/>database.</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/>if<sp/>(isset($_POST[&apos;</highlight><highlight class="normal">username</highlight><highlight class="stringliteral">&apos;])){</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral"><sp/>$username<sp/>=<sp/>$_POST[&apos;</highlight><highlight class="normal">username</highlight><highlight class="stringliteral">&apos;];</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral"><sp/>$email<sp/>=<sp/>$_POST[&apos;</highlight><highlight class="normal">email</highlight><highlight class="stringliteral">&apos;];</highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral"><sp/>$password<sp/>=<sp/>$_POST[&apos;</highlight><highlight class="normal">password</highlight><highlight class="stringliteral">&apos;];</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"><sp/>$username<sp/>=<sp/>stripslashes($username);</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/>$username<sp/>=<sp/>mysql_real_escape_string($username);</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/>$email<sp/>=<sp/>stripslashes($email);</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/>$email<sp/>=<sp/>mysql_real_escape_string($email);</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral"><sp/>$password<sp/>=<sp/>stripslashes($password);</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/>$password<sp/>=<sp/>mysql_real_escape_string($password);</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/>$trn_date<sp/>=<sp/>date(&quot;Y-m-d<sp/>H:i:s&quot;);</highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/>$checkQuery<sp/>=<sp/>&quot;SELECT<sp/>count(*)<sp/>from<sp/>`users`<sp/>where<sp/>`username`<sp/>=<sp/>&apos;</highlight><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kindref="member">$username</ref></highlight><highlight class="stringliteral">&apos;&quot;;</highlight></codeline>
+<codeline lineno="76"><highlight class="stringliteral"><sp/>$findUser<sp/>=<sp/>mysql_query($checkQuery);</highlight></codeline>
+<codeline lineno="77"><highlight class="stringliteral"><sp/>$userExists<sp/>=<sp/>mysql_result($findUser,0)<sp/>&gt;<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="stringliteral"><sp/>if<sp/>($userExists){</highlight></codeline>
+<codeline lineno="79"><highlight class="stringliteral"><sp/><sp/>echo<sp/>&quot;&lt;div<sp/>class=&apos;</highlight><highlight class="normal">form</highlight><highlight class="stringliteral">&apos;&gt;&lt;h3&gt;Username<sp/>already<sp/>exists,<sp/>choose<sp/>another<sp/>username.&lt;/h3&gt;&lt;br/&gt;Click<sp/>here<sp/>to<sp/>&lt;a<sp/>href=&apos;</highlight><highlight class="normal">signup.php</highlight><highlight class="stringliteral">&apos;&gt;Register&lt;/a&gt;&lt;/div&gt;&quot;;</highlight></codeline>
+<codeline lineno="80"><highlight class="stringliteral"><sp/><sp/>die();</highlight></codeline>
+<codeline lineno="81"><highlight class="stringliteral"><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="83"><highlight class="stringliteral"><sp/>$query<sp/>=<sp/>&quot;INSERT<sp/>into<sp/>`users`<sp/>(username,<sp/>password,<sp/>email,<sp/>trn_date)<sp/>VALUES<sp/>(&apos;</highlight><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kindref="member">$username</ref></highlight><highlight class="stringliteral">&apos;,<sp/>&apos;</highlight><highlight class="stringliteral">&quot;.md5($password).&quot;</highlight><highlight class="stringliteral">&apos;,<sp/>&apos;</highlight><highlight class="normal">$email</highlight><highlight class="stringliteral">&apos;,<sp/>&apos;</highlight><highlight class="normal">$trn_date</highlight><highlight class="stringliteral">&apos;)&quot;;</highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"><sp/>$result<sp/>=<sp/>mysql_query($query);</highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral"><sp/>if($result<sp/>and<sp/>!$userExists){</highlight></codeline>
+<codeline lineno="86"><highlight class="stringliteral"><sp/>echo<sp/>&quot;&lt;div<sp/>class=&apos;</highlight><highlight class="normal">form</highlight><highlight class="stringliteral">&apos;&gt;&lt;h3&gt;You<sp/>are<sp/>registered<sp/>successfully.&lt;/h3&gt;&lt;br/&gt;Click<sp/>here<sp/>to<sp/>&lt;a<sp/>href=&apos;</highlight><highlight class="normal">signin.php</highlight><highlight class="stringliteral">&apos;&gt;Login&lt;/a&gt;&lt;/div&gt;&quot;;</highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral"><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="stringliteral"><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral"><sp/>}else{</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral">?&gt;</highlight></codeline>
+<codeline lineno="91"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="92"><highlight class="stringliteral">&lt;div<sp/>class=&quot;form&quot;&gt;</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral">&lt;h1&gt;Registration&lt;/h1&gt;</highlight></codeline>
+<codeline lineno="94"><highlight class="stringliteral">&lt;form<sp/>name=&quot;registration&quot;<sp/>action=&quot;&quot;<sp/>method=&quot;post&quot;&gt;</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral">&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;username&quot;<sp/>placeholder=&quot;Username&quot;<sp/>required<sp/>/&gt;</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral">&lt;input<sp/>type=&quot;email&quot;<sp/>name=&quot;email&quot;<sp/>placeholder=&quot;Email&quot;<sp/>required<sp/>/&gt;</highlight></codeline>
+<codeline lineno="97"><highlight class="stringliteral">&lt;input<sp/>type=&quot;password&quot;<sp/>name=&quot;password&quot;<sp/>placeholder=&quot;Password&quot;<sp/>required<sp/>/&gt;</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral">&lt;input<sp/>type=&quot;submit&quot;<sp/>name=&quot;submit&quot;<sp/>value=&quot;Register&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral">&lt;/form&gt;</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="101"><highlight class="stringliteral">&lt;!--<sp/>jQuery<sp/>(necessary<sp/>for<sp/>Bootstrap&apos;</highlight><highlight class="normal">s<sp/>JavaScript<sp/>plugins)<sp/>--&gt;<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">&lt;!--<sp/>Include<sp/>all<sp/>compiled<sp/>plugins<sp/>(below),<sp/>or<sp/>include<sp/>individual<sp/>files<sp/>as<sp/>needed<sp/>--&gt;<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">&lt;?php<sp/>}<sp/>?&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">&lt;/body&gt;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">&lt;/html&gt;</highlight></codeline>
+    </programlisting>
+    <location file="signup.php"/>
+  </compounddef>
+</doxygen>

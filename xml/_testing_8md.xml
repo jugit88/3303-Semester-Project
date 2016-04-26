@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_testing_8md" kind="file" language="Markdown">
+    <compoundname>Testing.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##Team:<sp/>Jeremy<sp/>Udis,<sp/>Drew<sp/>Meyers,<sp/>James<sp/>Draper</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#AQIQ<sp/>Project:<sp/>Data<sp/>Visualization<sp/>with<sp/>D3</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Vision</highlight></codeline>
+<codeline><highlight class="normal">AQIQ<sp/>bridges<sp/>the<sp/>gap<sp/>between<sp/>citizens<sp/>and<sp/>scientists<sp/>by<sp/>providing<sp/>communities<sp/>with<sp/>low-cost<sp/>air<sp/>quality<sp/>data<sp/>analysis<sp/>tools.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Automated<sp/>Tests</highlight></codeline>
+<codeline><highlight class="normal">Our<sp/>goal<sp/>was<sp/>to<sp/>test<sp/>the<sp/>login<sp/>credentials<sp/>in<sp/>order<sp/>to<sp/>see<sp/>if<sp/>the<sp/>user<sp/>entered<sp/>valid<sp/>input<sp/>in<sp/>order<sp/>to<sp/>register<sp/>at<sp/>our<sp/>site.<sp/>You<sp/>can<sp/>find<sp/>the<sp/>test<sp/>cases<sp/>[here](https://github.com/jugit88/3308-Semester-Project/tree/master/Login)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####User<sp/>Cases</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|Use<sp/>Case<sp/>Id|UC-01|</highlight></codeline>
+<codeline><highlight class="normal">-----------|------------------------------------------------------------------------------|</highlight></codeline>
+<codeline><highlight class="normal">|Use<sp/>Case<sp/>Name|Air<sp/>Quality<sp/>Data<sp/>Visualization|</highlight></codeline>
+<codeline><highlight class="normal">Description|Provide<sp/>an<sp/>appealing<sp/>Visualization<sp/>for<sp/>air<sp/>quality<sp/>data<sp/>gathered<sp/>by<sp/>an<sp/>Arduino|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">User<sp/>steps:|<sp/>description<sp/>below|</highlight></codeline>
+<codeline><highlight class="normal">------|:------------------------------:|</highlight></codeline>
+<codeline><highlight class="normal">Users:|<sp/>Air<sp/>quality<sp/>Researchers|</highlight></codeline>
+<codeline><highlight class="normal">Pre-Conditions|User<sp/>is<sp/>logged<sp/>in,<sp/>and<sp/>uploads<sp/>a<sp/>.csv<sp/>file<sp/>with<sp/>the<sp/>correct<sp/>header<sp/>format|</highlight></codeline>
+<codeline><highlight class="normal">Post-Conditions|User<sp/>does<sp/>not<sp/>leave<sp/>the<sp/>page<sp/>or<sp/>log<sp/>out.<sp/>User<sp/>data<sp/>is<sp/>formatted<sp/>to<sp/>make<sp/>a<sp/>visualization|</highlight></codeline>
+<codeline><highlight class="normal">Frequency<sp/>of<sp/>Use|Up<sp/>to<sp/>user-&gt;Good<sp/>idea<sp/>to<sp/>gather<sp/>significant<sp/>data<sp/>prior|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">######Flow<sp/>of<sp/>Events:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|Actor<sp/>Action|System<sp/>Response|Comments|</highlight></codeline>
+<codeline><highlight class="normal">--------------------------------|:-----------------------------------------:|:------------------------------:|</highlight></codeline>
+<codeline><highlight class="normal">|1.Register<sp/>for<sp/>a<sp/>account|Won&apos;t<sp/>know<sp/>until<sp/>login|</highlight></codeline>
+<codeline><highlight class="normal">|2.Login<sp/>with<sp/>email+password|Take<sp/>user<sp/>to<sp/>the<sp/>home<sp/>page|</highlight></codeline>
+<codeline><highlight class="normal">|3.Upload<sp/>a<sp/>formatted.csv<sp/>file|Inform<sp/>user<sp/>if<sp/>.csv<sp/>is<sp/>formatted<sp/>correctly|must<sp/>be<sp/>.csv<sp/>w/<sp/>right<sp/>formatting</highlight></codeline>
+<codeline><highlight class="normal">|4.View<sp/>visualization|Display<sp/>visualization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Test<sp/>Pass?|Pass/Fail|</highlight></codeline>
+<codeline><highlight class="normal">----------|---------|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="Testing.md"/>
+  </compounddef>
+</doxygen>

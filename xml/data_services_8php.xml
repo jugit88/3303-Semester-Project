@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="data_services_8php" kind="file" language="PHP">
+    <compoundname>dataServices.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="data_services_8php_1add1bb3a6ddd16413aa3c25c7002833e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>PHP</definition>
+        <argsstring></argsstring>
+        <name>PHP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dataServices.php" line="55" column="1" bodyfile="dataServices.php" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="data_services_8php_1a5e92bb37ab892f2f238ed28c5c2c40d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$uploaded</definition>
+        <argsstring></argsstring>
+        <name>$uploaded</name>
+        <initializer>= $_FILES[&apos;csv&apos;][&apos;name&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dataServices.php" line="57" column="1" bodyfile="dataServices.php" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="data_services_8php_1a933f9857f8ebf67bd680066a512f38ba" prot="public" static="no" mutable="no">
+        <type>if($_FILES[csv][size] &gt; 0) if(!empty($_GET[success]))&lt; form action=&quot;&quot;method=&quot;post&quot;enctype=&quot;multipart/form-data&quot;name=&quot;form1&quot;id=&quot;form1&quot;&gt; Choose your POD file to be uploaded and</type>
+        <definition>if ($_FILES[csv][size] &gt; 0) if (!empty($_GET[success]))&lt;form action=&quot;&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot; name=&quot;form1&quot; id=&quot;form1&quot;&gt; Choose your POD file to be uploaded and processed</definition>
+        <argsstring></argsstring>
+        <name>processed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dataServices.php" line="219" column="1" bodyfile="dataServices.php" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;!DOCTYPE<sp/>html&gt;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">&lt;html<sp/>lang=</highlight><highlight class="stringliteral">&quot;en&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">&lt;head&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">&lt;meta<sp/>charset=</highlight><highlight class="stringliteral">&quot;utf-8&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">&lt;meta<sp/>http-equiv=</highlight><highlight class="stringliteral">&quot;X-UA-Compatible&quot;</highlight><highlight class="normal"><sp/>content=</highlight><highlight class="stringliteral">&quot;IE=edge&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">&lt;meta<sp/>name=</highlight><highlight class="stringliteral">&quot;viewport&quot;</highlight><highlight class="normal"><sp/>content=</highlight><highlight class="stringliteral">&quot;width=device-width,<sp/>initial-scale=1&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">&lt;title&gt;ypod&lt;/title&gt;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">&lt;!--<sp/>Bootstrap<sp/>--&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">&lt;link<sp/>rel=</highlight><highlight class="stringliteral">&quot;stylesheet&quot;</highlight><highlight class="normal"><sp/>href=</highlight><highlight class="stringliteral">&quot;css/bootstrap.css&quot;</highlight><highlight class="normal"><sp/>/&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">&lt;!--<sp/>HTML5<sp/>shim<sp/>and<sp/>Respond.js<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>IE8<sp/>support<sp/>of<sp/>HTML5<sp/>elements<sp/>and<sp/>media<sp/>queries<sp/>--&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">&lt;!--<sp/>WARNING:<sp/>Respond.js<sp/>doesn</highlight><highlight class="stringliteral">&apos;t<sp/>work<sp/>if<sp/>you<sp/>view<sp/>the<sp/>page<sp/>via<sp/>file://<sp/>--&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">&lt;!--[if<sp/>lt<sp/>IE<sp/>9]&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>src=&quot;https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;![endif]--&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral">&lt;/head&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral">&lt;body&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral">&lt;nav<sp/>class=&quot;navbar<sp/>navbar-default<sp/>navbar-inverse&quot;&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/>&lt;div<sp/>class=&quot;container-fluid&quot;&gt;<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;!--<sp/>Brand<sp/>and<sp/>toggle<sp/>get<sp/>grouped<sp/>for<sp/>better<sp/>mobile<sp/>display<sp/>--&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;navbar-header&quot;&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;button<sp/>type=&quot;button&quot;<sp/>class=&quot;navbar-toggle<sp/>collapsed&quot;<sp/>data-toggle=&quot;collapse&quot;<sp/>data-target=&quot;#bs-example-navbar-collapse-1&quot;<sp/>aria-expanded=&quot;false&quot;&gt;<sp/>&lt;span<sp/>class=&quot;sr-only&quot;&gt;Toggle<sp/>navigation&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<sp/>&lt;/button&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>class=&quot;navbar-brand&quot;<sp/>href=&quot;#&quot;&gt;YPOD&lt;/a&gt;&lt;/div&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;!--<sp/>Collect<sp/>the<sp/>nav<sp/>links,<sp/>forms,<sp/>and<sp/>other<sp/>content<sp/>for<sp/>toggling<sp/>--&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;collapse<sp/>navbar-collapse&quot;<sp/>id=&quot;bs-example-navbar-collapse-1&quot;&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul<sp/>class=&quot;nav<sp/>navbar-nav&quot;&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;index.html&quot;<sp/>target=&quot;_self&quot;&gt;Home&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;Products.html&quot;<sp/>target=&quot;_self&quot;&gt;Products&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li<sp/>class=&quot;active&quot;&gt;&lt;a<sp/>href=&quot;dataServices.php&quot;<sp/>target=&quot;_self&quot;&gt;Data<sp/>Services&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;Aboutus.html&quot;<sp/>target=&quot;_self&quot;&gt;About<sp/>Us&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul<sp/>class=&quot;nav<sp/>navbar-nav<sp/>navbar-right&quot;&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;signup.php&quot;<sp/>target=&quot;_self&quot;&gt;Sign<sp/>up&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;signin.php&quot;<sp/>target=&quot;_self&quot;&gt;Sign<sp/>In&lt;/a&gt;<sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;!--<sp/>/.navbar-collapse<sp/>--&gt;<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/>&lt;!--<sp/>/.container-fluid<sp/>--&gt;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral">&lt;/nav&gt;</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral">&lt;div<sp/>class=&quot;container&quot;&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>&lt;div&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral">&lt;div<sp/>class=&quot;input-group&quot;&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;input-group&quot;&gt;<sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral">&lt;/body&gt;</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral">&lt;/html&gt;</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral">&lt;?PHP</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral">include(&quot;auth.php&quot;);<sp/>//include<sp/>auth.php<sp/>file<sp/>on<sp/>all<sp/>secure<sp/>pages</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral">$uploaded<sp/>=<sp/>$_FILES[&apos;</highlight><highlight class="normal">csv</highlight><highlight class="stringliteral">&apos;][&apos;</highlight><highlight class="normal">name</highlight><highlight class="stringliteral">&apos;];</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral">if<sp/>($_FILES[csv][size]<sp/>&gt;<sp/>0)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral">$hostname<sp/>=<sp/>&quot;localhost&quot;;</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral">$username<sp/>=<sp/>&quot;root&quot;;</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral">$password<sp/>=<sp/>&quot;hanniganlab&quot;;</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral">//<sp/>Connect<sp/>to<sp/>Database<sp/>and<sp/>Table</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral">$dbhandle<sp/>=<sp/>mysql_connect($hostname,<sp/>$username,<sp/>$password)</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>or<sp/>die(&quot;Unable<sp/>to<sp/>connect<sp/>to<sp/>MySQL&quot;);</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral">$selectdatabase<sp/>=<sp/>mysql_select_db(&quot;ypod&quot;,$dbhandle)</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>or<sp/>die(&quot;Could<sp/>not<sp/>select<sp/>ypod<sp/>database&quot;);</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral">//<sp/>Text<sp/>File<sp/>to<sp/>read<sp/>in</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral">$uploaded<sp/>=<sp/>$_FILES[&apos;</highlight><highlight class="normal">csv</highlight><highlight class="stringliteral">&apos;][&apos;</highlight><highlight class="normal">name</highlight><highlight class="stringliteral">&apos;];</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral">move_uploaded_file($_FILES[&quot;csv&quot;][&quot;tmp_name&quot;],</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;C:\Bitnami\wampstack-5.6.19-0\apache2\htdocs\login-site/&quot;<sp/>.<sp/>$_FILES[&quot;csv&quot;][&quot;name&quot;]);</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral">$requiredHeaders<sp/>=<sp/>array(&quot;Rtc<sp/>Date&quot;,&quot;Rtc<sp/>Time&quot;,&quot;BMP<sp/>Temp(C)&quot;,</highlight></codeline>
+<codeline lineno="76"><highlight class="stringliteral">&quot;BMP<sp/>Pres(mb)&quot;,<sp/>&quot;SHT25<sp/>Temp(C)&quot;,<sp/>&quot;SHT25<sp/>Humidity&quot;,<sp/>&quot;CO2(ADC<sp/>VAL)&quot;,</highlight></codeline>
+<codeline lineno="77"><highlight class="stringliteral">&quot;Wind<sp/>Speed(mph)&quot;,<sp/>&quot;Wind<sp/>Direction(deg)&quot;,<sp/>&quot;Quad-Aux-1(microVolts)&quot;,</highlight></codeline>
+<codeline lineno="78"><highlight class="stringliteral">&quot;Quad-Main-1(microVolts)&quot;,<sp/>&quot;Quad-Aux-2(microVolts)&quot;,<sp/>&quot;Quad-Main-2(microVolts)&quot;,</highlight></codeline>
+<codeline lineno="79"><highlight class="stringliteral">&quot;Quad-Aux-3(microVolts)&quot;,<sp/>&quot;Quad-Main-3(microVolts)&quot;,<sp/>&quot;Quad-Aux-4(microVolts)&quot;,</highlight></codeline>
+<codeline lineno="80"><highlight class="stringliteral">&quot;Quad-Main-4(microVolts)&quot;,<sp/>&quot;Fig<sp/>210<sp/>Heat(milliVolts)&quot;,<sp/>&quot;Fig<sp/>210<sp/>Sens(milliVolts)&quot;,</highlight></codeline>
+<codeline lineno="81"><highlight class="stringliteral">&quot;Fig<sp/>280<sp/>Heat(milliVolts)&quot;,<sp/>&quot;Fig<sp/>280<sp/>Sens(milliVolts)&quot;,<sp/>&quot;BL<sp/>Moccon<sp/>sens(milliVolts)&quot;,</highlight></codeline>
+<codeline lineno="82"><highlight class="stringliteral">&quot;ADC2<sp/>Channel-2(empty)&quot;,<sp/>&quot;E2VO3<sp/>Heat(milliVolts)&quot;,<sp/>&quot;E2VO3<sp/>Sens(milliVolts)&quot;,<sp/>&quot;GPS<sp/>Date&quot;,<sp/>&quot;GPS<sp/>Time(UTC)&quot;,</highlight></codeline>
+<codeline lineno="83"><highlight class="stringliteral">&quot;Latitude&quot;,<sp/>&quot;Longitude&quot;,<sp/>&quot;Fix<sp/>Quality&quot;,<sp/>&quot;Altitude(meters<sp/>above<sp/>sea<sp/>level)&quot;,<sp/>&quot;Statellites&quot;);<sp/>//headers<sp/>we<sp/>expect</highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral">$f<sp/>=<sp/>fopen($uploaded,<sp/>&apos;</highlight><highlight class="normal">r</highlight><highlight class="stringliteral">&apos;);</highlight></codeline>
+<codeline lineno="86"><highlight class="stringliteral">$firstLine<sp/>=<sp/>fgets($f);<sp/>//get<sp/>first<sp/>line<sp/>of<sp/>csv<sp/>file</highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral">fclose($f);</highlight></codeline>
+<codeline lineno="88"><highlight class="stringliteral">$foundHeaders<sp/>=<sp/>str_getcsv(trim($firstLine),<sp/>&apos;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&apos;,<sp/>&apos;</highlight><highlight class="stringliteral">&quot;&apos;);<sp/>//parse<sp/>to<sp/>array</highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral">if<sp/>($foundHeaders<sp/>!==<sp/>$requiredHeaders)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>unlink($uploaded);</highlight></codeline>
+<codeline lineno="91"><highlight class="stringliteral"><sp/><sp/><sp/>die(&apos;.csv<sp/>file<sp/>does<sp/>not<sp/>match<sp/>required<sp/>format.<sp/>Make<sp/>sure<sp/>youre<sp/>uploading<sp/>a<sp/>valid<sp/>POD<sp/>file.&lt;br&gt;&apos;<sp/>.<sp/>mysql_error());</highlight></codeline>
+<codeline lineno="92"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral">else<sp/>if($foundHeaders<sp/>==<sp/>$requiredHeaders){</highlight></codeline>
+<codeline lineno="94"><highlight class="stringliteral">$temp<sp/>=<sp/>tmpfile();</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral">$f<sp/>=<sp/>fopen($uploaded,<sp/>&apos;r&apos;);</highlight></codeline>
+<codeline lineno="97"><highlight class="stringliteral">fgets($f);</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral">$lines<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral">if($f<sp/>!==<sp/>false){</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>while(($data<sp/>=<sp/>fgetcsv($f,<sp/>8192,<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;))<sp/>!==<sp/>false)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//echo<sp/>$data;</highlight></codeline>
+<codeline lineno="102"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$line<sp/>=<sp/>join(&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;,<sp/>$data);</highlight></codeline>
+<codeline lineno="103"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array_push($lines,<sp/>$line);</highlight></codeline>
+<codeline lineno="104"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//print_r($lines[0]);</highlight></codeline>
+<codeline lineno="105"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="107"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral">//print_r($lines);</highlight></codeline>
+<codeline lineno="109"><highlight class="stringliteral">$contents<sp/>=<sp/>&quot;</highlight><highlight class="normal">userid,session_id,Rtc<sp/>Date,Rtc<sp/>Time,BMP<sp/>Temp(C),BMP<sp/>Pres(mb),SHT25<sp/>Temp(C),<sp/>SHT25<sp/>Humidity,CO2(ADC<sp/>VAL),Wind<sp/>Speed(mph),<sp/>Wind<sp/>Direction(deg),Quad-Aux-1(microVolts),Quad-Main-1(microVolts),Quad-Aux-2(microVolts),Quad-Main-2(microVolts),Quad-Aux-3(microVolts),<sp/>Quad-Main-3(microVolts),Quad-Aux-4(microVolts),Quad-Main-4(microVolts),<sp/>Fig<sp/>210<sp/>Heat(milliVolts),Fig<sp/>210<sp/>Sens(milliVolts),Fig<sp/>280<sp/>Heat(milliVolts),Fig<sp/>280<sp/>Sens(milliVolts),BL<sp/>Moccon<sp/>sens(milliVolts),ADC2<sp/>Channel-2(empty),E2VO3<sp/>Heat(milliVolts),E2VO3<sp/>Sens(milliVolts),GPS<sp/>Date,GPS<sp/>Time(UTC),Latitude,Longitude,Fix<sp/>Quality,Altitude(meters<sp/>above<sp/>sea<sp/>level,Statellites<sp/>\r\n</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="110"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="111"><highlight class="stringliteral">//<sp/>get<sp/>userid<sp/>from<sp/>the<sp/>db</highlight></codeline>
+<codeline lineno="112"><highlight class="stringliteral">$activeUser<sp/>=<sp/>$_SESSION[&apos;username&apos;];</highlight></codeline>
+<codeline lineno="113"><highlight class="stringliteral">$uidQuery<sp/>=<sp/>&quot;</highlight><highlight class="normal">SELECT<sp/>`</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">`<sp/>from<sp/>`users`<sp/>where<sp/>`username`<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;$activeUser&apos;</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="114"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="115"><highlight class="stringliteral">$res<sp/>=<sp/>mysql_query($uidQuery);</highlight></codeline>
+<codeline lineno="116"><highlight class="stringliteral">if<sp/>(mysql_num_rows($res)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>echo<sp/>&quot;</highlight><highlight class="normal">No<sp/>Id<sp/>available<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>the<sp/>given<sp/>username</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="118"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>exit;</highlight></codeline>
+<codeline lineno="119"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="120"><highlight class="stringliteral">$userid<sp/>=<sp/>mysql_fetch_assoc($res)[&apos;id&apos;];</highlight></codeline>
+<codeline lineno="121"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="122"><highlight class="stringliteral">//<sp/>get<sp/>session<sp/>id<sp/>from<sp/>user<sp/>uploaded<sp/>log<sp/>file</highlight></codeline>
+<codeline lineno="123"><highlight class="stringliteral">$sessionid<sp/>=<sp/>&apos;999&apos;;</highlight></codeline>
+<codeline lineno="124"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="125"><highlight class="stringliteral">foreach($lines<sp/>as<sp/>$line<sp/>=&gt;<sp/>$value)<sp/>$contents<sp/>.=<sp/>$userid<sp/>.<sp/>&apos;,&apos;<sp/>.<sp/>$sessionid<sp/>.<sp/>&apos;,&apos;<sp/>.<sp/>$value<sp/>.<sp/>&quot;</highlight><highlight class="normal">\r\n</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="126"><highlight class="stringliteral">$csvFile<sp/>=<sp/>&quot;</highlight><highlight class="normal">test_</highlight><highlight class="stringliteral">&quot;<sp/>.<sp/>$userid<sp/>.<sp/>&apos;_&apos;<sp/>.<sp/>$sessionid<sp/>.<sp/>&quot;</highlight><highlight class="normal">.csv</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="127"><highlight class="stringliteral">file_put_contents($csvFile,<sp/>$contents);</highlight></codeline>
+<codeline lineno="128"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="129"><highlight class="stringliteral">unlink($uploaded);</highlight></codeline>
+<codeline lineno="130"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="131"><highlight class="stringliteral">$uploaded<sp/>=<sp/>$csvFile;</highlight></codeline>
+<codeline lineno="132"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="133"><highlight class="stringliteral">if<sp/>(!empty($uploaded))<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$query<sp/>=<sp/>&quot;</highlight><highlight class="normal">LOAD<sp/>DATA<sp/>LOCAL<sp/>INFILE<sp/></highlight><highlight class="stringliteral">&apos;&quot;<sp/>.<sp/>$uploaded<sp/>.<sp/>&quot;&apos;</highlight><highlight class="normal"><sp/>INTO<sp/>TABLE<sp/>AQIQ_raw<sp/>FIELDS<sp/>TERMINATED<sp/>BY<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal"><sp/>LINES<sp/>TERMINATED<sp/>BY<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal"><sp/>IGNORE<sp/>1<sp/>LINES<sp/></highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="135"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>mysql_query($query)<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>or<sp/>die(&apos;Error<sp/>Loading<sp/>Data<sp/>File.&lt;br&gt;&apos;<sp/>.<sp/>mysql_error());</highlight></codeline>
+<codeline lineno="137"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>echo<sp/>&quot;</highlight><highlight class="normal">Upload<sp/>successful.<sp/></highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="138"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>if<sp/>(is_file($uploaded))<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//unlink($uploaded);</highlight></codeline>
+<codeline lineno="140"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unlink($csvFile);</highlight></codeline>
+<codeline lineno="141"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="143"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$query<sp/>=<sp/>&quot;</highlight><highlight class="normal">SELECT<sp/>`CO2<sp/>(ADC<sp/>VAL)`<sp/>FROM<sp/>aqiq_raw</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="144"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$result<sp/>=<sp/>mysql_query($query);</highlight></codeline>
+<codeline lineno="145"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$array<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="146"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>while<sp/>($ar<sp/>=<sp/>mysql_fetch_array($result)){</highlight></codeline>
+<codeline lineno="147"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$array[]<sp/>=<sp/>$ar[&apos;CO2<sp/>(ADC<sp/>VAL)&apos;];</highlight></codeline>
+<codeline lineno="148"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="150"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>sort($array);</highlight></codeline>
+<codeline lineno="151"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$score_representing_2nd_percentile<sp/>=<sp/>$array[round((2/100)<sp/>*<sp/>count($array)<sp/>-<sp/>0.5)];</highlight></codeline>
+<codeline lineno="152"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>echo($score_representing_2nd_percentile);</highlight></codeline>
+<codeline lineno="153"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="154"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$O3query<sp/>=<sp/>&quot;</highlight><highlight class="normal">SELECT<sp/>AVG(`E2VO3<sp/>Sens(milliVolts)`)<sp/>FROM<sp/>aqiq_raw</highlight><highlight class="stringliteral">&quot;;</highlight></codeline>
+<codeline lineno="155"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$O3result<sp/>=<sp/>mysql_query($query);</highlight></codeline>
+<codeline lineno="156"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="157"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>$processing2<sp/>=<sp/>&quot;</highlight><highlight class="normal">INSERT<sp/>INTO<sp/>`aqiq_processed`(`userid`,<sp/>`session_id`,<sp/>`Rtc<sp/>Date<sp/>(GMT)`,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>`Rtc<sp/>Time<sp/>(GMT)`,`BMP<sp/>Temp(C)`,`BMP<sp/>Pres(mb)`,`SHT25<sp/>Temp(C)`,`SHT25<sp/>Humidity`,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>`CO2(ppm)`,`Wind<sp/>Speed(mph)`,`Wind<sp/>Direction(deg)`,`Quad-Aux1`,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Main1`,`Quad-Aux2`,`Quad-Main2`,`Quad-Aux3`,`Quad-Main3`,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Aux4`,`Quad-Main4`,<sp/>`Fig<sp/>210<sp/>Heat`,`Fig<sp/>210<sp/>Sens`,`Fig<sp/>280<sp/>Heat`,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>`Fig<sp/>280<sp/>Sens`,`BL<sp/>Moccon`,<sp/>`E2VO3(heat)`,<sp/>`E2VO3(sens<sp/>ppb)`,<sp/>`GPS<sp/>Date`,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>`GPS<sp/>Time(UTC)`,`Latitude`,`Longitude`,<sp/>`Fix<sp/>Quality`,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>`Altitude(meters<sp/>above<sp/>sea<sp/>level)`,<sp/>`Satellites`)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>SELECT<sp/>`userid`,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>`session_id`,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>`Rtc<sp/>Date`,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>`Rtc<sp/>Time`,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>(`BMP<sp/>Temp(C)`*9.0)/5.0<sp/>+<sp/>32,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>`BMP<sp/>Pres(mb)`,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>`SHT25<sp/>Temp(C)`,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>`SHT25<sp/>Humidity`,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>((5000-390)/(1000<sp/>-<sp/></highlight><highlight class="stringliteral">&apos;$score_representing_2nd_percentile&apos;</highlight><highlight class="normal">))*`CO2<sp/>(ADC<sp/>VAL)`+<sp/>(5000<sp/>-<sp/>((5000-390)/(1000<sp/>-<sp/></highlight><highlight class="stringliteral">&apos;$score_representing_2nd_percentile&apos;</highlight><highlight class="normal">))*1000),</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>`Wind<sp/>Speed(mph)`,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>`Wind<sp/>Direction(deg)`,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Aux-1(microVolts)`,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Main-1(microVolts)`,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Aux-2(microVolts)`,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Main-2(microVolts)`,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Aux-3(microVolts)`,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Main-3(microVolts)`,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Aux-4(microVolts)`,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>`Quad-Main-4(microVolts)`,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>`Fig<sp/>210<sp/>Heat(milliVolts)`,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>`Fig<sp/>210<sp/>Sens(milliVolts)`,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>`Fig<sp/>280<sp/>Heat(milliVolts)`,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>`Fig<sp/>280<sp/>Sens(milliVolts)`,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>`BL<sp/>Moccon<sp/>sens(milliVolts)`,<sp/>#pretty<sp/>sure<sp/>Ashley</highlight><highlight class="stringliteral">&apos;s<sp/>conversion<sp/>is<sp/>for<sp/>ADC<sp/>values</highlight></codeline>
+<codeline lineno="190"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`E2VO3<sp/>Heat(milliVolts)`,</highlight></codeline>
+<codeline lineno="191"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`E2VO3<sp/>Sens(milliVolts)`,</highlight></codeline>
+<codeline lineno="192"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`GPS<sp/>Date`,</highlight></codeline>
+<codeline lineno="193"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`GPS<sp/>Time<sp/>(UTC)`,</highlight></codeline>
+<codeline lineno="194"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`Latitude`,<sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`Longitude`,<sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`Fix<sp/>Quality`,<sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`Altitude(meters<sp/>above<sp/>sea<sp/>level)`,<sp/></highlight></codeline>
+<codeline lineno="198"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`Satellites`</highlight></codeline>
+<codeline lineno="199"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>FROM<sp/>`aqiq_raw`&quot;;</highlight></codeline>
+<codeline lineno="200"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>mysql_query($processing2)</highlight></codeline>
+<codeline lineno="201"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>or<sp/>die<sp/>(&apos;</highlight><highlight class="normal">Error<sp/>processing<sp/>data<sp/>file.&lt;br&gt;</highlight><highlight class="stringliteral">&apos;<sp/>.<sp/>mysql_error());</highlight></codeline>
+<codeline lineno="202"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>echo<sp/>&quot;Data<sp/>processing<sp/>sucessful&quot;;</highlight></codeline>
+<codeline lineno="203"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="204"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="205"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="206"><highlight class="stringliteral">?&gt;</highlight></codeline>
+<codeline lineno="207"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="208"><highlight class="stringliteral">&lt;!DOCTYPE<sp/>html<sp/>PUBLIC<sp/>&quot;-//W3C//DTD<sp/>XHTML<sp/>1.0<sp/>Transitional//EN&quot;<sp/>&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;<sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="stringliteral">&lt;html<sp/>xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;<sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="stringliteral">&lt;head&gt;<sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="stringliteral">&lt;meta<sp/>http-equiv=&quot;Content-Type&quot;<sp/>content=&quot;text/html;<sp/>charset=iso-8859-1&quot;<sp/>/&gt;<sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="stringliteral">&lt;title&gt;Import<sp/>a<sp/>CSV<sp/>File<sp/>with<sp/>PHP<sp/>&amp;<sp/>MySQL&lt;/title&gt;<sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="stringliteral">&lt;/head&gt;<sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="215"><highlight class="stringliteral">&lt;body&gt;</highlight></codeline>
+<codeline lineno="216"><highlight class="stringliteral">&lt;?php<sp/>if<sp/>(!empty($_GET[success]))<sp/>{<sp/>echo<sp/>&quot;&lt;b&gt;Your<sp/>file<sp/>has<sp/>been<sp/>imported.&lt;/b&gt;&lt;br&gt;&lt;br&gt;&quot;;<sp/>}<sp/>//generic<sp/>success<sp/>notice<sp/>?&gt;<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="218"><highlight class="stringliteral">&lt;form<sp/>action=&quot;&quot;<sp/>method=&quot;post&quot;<sp/>enctype=&quot;multipart/form-data&quot;<sp/>name=&quot;form1&quot;<sp/>id=&quot;form1&quot;&gt;<sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="stringliteral"><sp/><sp/>Choose<sp/>your<sp/>POD<sp/>file<sp/>to<sp/>be<sp/>uploaded<sp/>and<sp/>processed:<sp/>&lt;br<sp/>/&gt;<sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>name=&quot;csv&quot;<sp/>type=&quot;file&quot;<sp/>id=&quot;csv&quot;<sp/>/&gt;<sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="stringliteral"><sp/><sp/>&lt;input<sp/>type=&quot;submit&quot;<sp/>name=&quot;Submit&quot;<sp/>value=&quot;Submit&quot;<sp/>/&gt;<sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="stringliteral">&lt;/form&gt;</highlight></codeline>
+<codeline lineno="223"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="224"><highlight class="stringliteral">&lt;div<sp/>class=&quot;form&quot;&gt;</highlight></codeline>
+<codeline lineno="225"><highlight class="stringliteral">&lt;p&gt;Welcome<sp/>&lt;?php<sp/>echo<sp/>$_SESSION[&apos;</highlight><highlight class="normal">username</highlight><highlight class="stringliteral">&apos;];<sp/>?&gt;!&lt;/p&gt;</highlight></codeline>
+<codeline lineno="226"><highlight class="stringliteral">&lt;p&gt;&lt;a<sp/>href=&quot;simplegraph.html&quot;&gt;Download<sp/>Processed<sp/>Data&lt;/a&gt;&lt;/p&gt;</highlight></codeline>
+<codeline lineno="227"><highlight class="stringliteral">&lt;a<sp/>href=&quot;logout.php&quot;&gt;Logout&lt;/a&gt;</highlight></codeline>
+<codeline lineno="228"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="229"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="230"><highlight class="stringliteral">&lt;/body&gt;<sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="stringliteral">&lt;/html&gt;<sp/></highlight></codeline>
+    </programlisting>
+    <location file="dataServices.php"/>
+  </compounddef>
+</doxygen>

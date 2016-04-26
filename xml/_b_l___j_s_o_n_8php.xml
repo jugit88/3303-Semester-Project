@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_b_l___j_s_o_n_8php" kind="file" language="PHP">
+    <compoundname>BL_JSON.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$hostname</definition>
+        <argsstring></argsstring>
+        <name>$hostname</name>
+        <initializer>= &quot;localhost&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="10" column="1" bodyfile="BL_JSON.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$username</definition>
+        <argsstring></argsstring>
+        <name>$username</name>
+        <initializer>= &quot;root&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="11" column="1" bodyfile="BL_JSON.php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$password</definition>
+        <argsstring></argsstring>
+        <name>$password</name>
+        <initializer>= &quot;hanniganlab&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="12" column="1" bodyfile="BL_JSON.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$dbhandle</definition>
+        <argsstring></argsstring>
+        <name>$dbhandle</name>
+        <initializer>= mysql_connect($hostname, $username, $password)
+    or die(&quot;Unable to connect to MySQL&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="14" column="1" bodyfile="BL_JSON.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$selectdatabase</definition>
+        <argsstring></argsstring>
+        <name>$selectdatabase</name>
+        <initializer>= mysql_select_db(&quot;ypod&quot;,$dbhandle)
+    or die(&quot;Could not select ypod database&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="17" column="1" bodyfile="BL_JSON.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$myquery</definition>
+        <argsstring></argsstring>
+        <name>$myquery</name>
+        <initializer>= &quot;SELECT `BL Moccon sens(milliVolts)` FROM `aqiq_raw`&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="39" column="1" bodyfile="BL_JSON.php" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>= mysql_query($myquery)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="40" column="1" bodyfile="BL_JSON.php" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" prot="public" static="no" mutable="no">
+        <type>if(!$query)</type>
+        <definition>if (!$query) $rows1</definition>
+        <argsstring></argsstring>
+        <name>$rows1</name>
+        <initializer>= array()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="45" column="1" bodyfile="BL_JSON.php" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1aece741d5099bb229e07df7a57776cfaa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$rows1[&apos;name&apos;]</definition>
+        <argsstring>[&apos;name&apos;]</argsstring>
+        <name>$rows1</name>
+        <initializer>= &apos;BL Moccon sens(milliVolts)&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="46" column="1" bodyfile="BL_JSON.php" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_b_l___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" prot="public" static="no" mutable="no">
+        <type>while($r=mysql_fetch_array($query))</type>
+        <definition>while ($r=mysql_fetch_array($query)) $result</definition>
+        <argsstring></argsstring>
+        <name>$result</name>
+        <initializer>= array()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BL_JSON.php" line="57" column="1" bodyfile="BL_JSON.php" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Grab BL data from database. </para>    </briefdescription>
+    <detaileddescription>
+<para>convert Data to JSON format in order to use for data visualization. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">include(</highlight><highlight class="stringliteral">&quot;auth.php&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//include<sp/>auth.php<sp/>file<sp/>on<sp/>all<sp/>secure<sp/>pages<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kindref="member">$hostname</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;localhost&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kindref="member">$username</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kindref="member">$password</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;hanniganlab&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kindref="member">$dbhandle</ref><sp/>=<sp/>mysql_connect(<ref refid="_b_l___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kindref="member">$hostname</ref>,<sp/><ref refid="_b_l___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kindref="member">$username</ref>,<sp/><ref refid="_b_l___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kindref="member">$password</ref>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>or<sp/>die(&quot;Unable<sp/>to<sp/>connect<sp/>to<sp/>MySQL&quot;);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kindref="member">$selectdatabase</ref><sp/>=<sp/>mysql_select_db(&quot;ypod&quot;,<ref refid="_b_l___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kindref="member">$dbhandle</ref>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>or<sp/>die(&quot;Could<sp/>not<sp/>select<sp/>ypod<sp/>database&quot;);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*$myquery<sp/>=<sp/>&quot;SELECT<sp/>`BMP<sp/>Temp(C)`,<sp/>`BMP<sp/>Pres(mb)`<sp/>FROM<sp/>`aqiq_raw`&quot;;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">$query<sp/>=<sp/>mysql_query($myquery);</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">if<sp/>(<sp/>!<sp/>$query<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>echo<sp/>mysql_error();</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>die;</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*$myquery<sp/>=<sp/>&quot;SELECT<sp/>`BMP<sp/>Temp(C)`<sp/>FROM<sp/>`aqiq_raw`&quot;;</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">$query<sp/>=<sp/>mysql_query($myquery);</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">if<sp/>(<sp/>!<sp/>$query<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>echo<sp/>mysql_error();</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>die;</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">$rows<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">$rows[&apos;name&apos;]<sp/>=<sp/>&apos;BMP<sp/>Temp(C)&apos;;</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">while($r<sp/>=<sp/>mysql_fetch_array($query))<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>$rows[&apos;data&apos;][]<sp/>=<sp/>$r[&apos;BMP<sp/>Temp(C)&apos;];</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kindref="member">$myquery</ref><sp/>=<sp/>&quot;SELECT<sp/>`BL<sp/>Moccon<sp/>sens(milliVolts)`<sp/>FROM<sp/>`aqiq_raw`&quot;;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=<sp/>mysql_query(<ref refid="_b_l___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kindref="member">$myquery</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">if<sp/>(<sp/>!<sp/><ref refid="_b_l___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>mysql_error();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>die;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kindref="member">$rows1</ref><sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kindref="member">$rows1</ref>[</highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;BL<sp/>Moccon<sp/>sens(milliVolts)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">($r<sp/>=<sp/>mysql_fetch_array(<ref refid="_b_l___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_b_l___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kindref="member">$rows1</ref>[</highlight><highlight class="stringliteral">&apos;data&apos;</highlight><highlight class="normal">][]<sp/>=<sp/>$r[</highlight><highlight class="stringliteral">&apos;BL<sp/>Moccon<sp/>sens(milliVolts)&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*$data<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">for<sp/>($x<sp/>=<sp/>0;<sp/>$x<sp/>&lt;<sp/>mysql_num_rows($query);<sp/>$x++)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>$data[]<sp/>=<sp/>mysql_fetch_assoc($query);</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">echo<sp/>json_encode($data);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="_b_l___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kindref="member">$result</ref><sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">array_push(<ref refid="_b_l___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kindref="member">$result</ref>,<ref refid="_b_m_p___j_s_o_n_8php_1a9d560e904e6665a6ee21f86a65c1ef8e" kindref="member">$rows</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//array_push($result,$rows1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">print<sp/>json_encode(<ref refid="_b_l___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kindref="member">$result</ref>,<sp/>JSON_NUMERIC_CHECK);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">mysql_close(<ref refid="_b_l___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kindref="member">$dbhandle</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="BL_JSON.php"/>
+  </compounddef>
+</doxygen>

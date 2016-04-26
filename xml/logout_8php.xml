@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="logout_8php" kind="file" language="PHP">
+    <compoundname>logout.php</compoundname>
+    <briefdescription>
+<para>This is a logout method in order to end the session. </para>    </briefdescription>
+    <detaileddescription>
+<para>destroys current session and redirection to the home page </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">session_start();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(session_destroy())<sp/></highlight><highlight class="comment">//<sp/>Destroying<sp/>All<sp/>Sessions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">header(</highlight><highlight class="stringliteral">&quot;Location:<sp/>signin.php&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>Redirecting<sp/>To<sp/>Home<sp/>Page</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="logout.php"/>
+  </compounddef>
+</doxygen>

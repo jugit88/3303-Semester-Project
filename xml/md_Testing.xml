@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Testing" kind="page">
+    <compoundname>md_Testing</compoundname>
+    <title>Team: Jeremy Udis, Drew Meyers, James Draper</title>
+    <detaileddescription>
+<para>#AQIQ Project: Data Visualization with D3</para><para><heading level="3">Vision</heading>
+</para><para>AQIQ bridges the gap between citizens and scientists by providing communities with low-cost air quality data analysis tools.</para><para><heading level="3">Automated Tests</heading>
+</para><para>Our goal was to test the login credentials in order to see if the user entered valid input in order to register at our site. You can find the test cases <ulink url="https://github.com/jugit88/3308-Semester-Project/tree/master/Login">here</ulink></para><para><heading level="4">User Cases</heading>
+</para><para><table rows="3" cols="2"><row>
+<entry thead="yes"><para>Use Case Id</para></entry><entry thead="yes"><para>UC-01  </para></entry></row>
+<row>
+<entry thead="no"><para>Use Case Name</para></entry><entry thead="no"><para>Air Quality Data Visualization </para></entry></row>
+<row>
+<entry thead="no"><para>Description</para></entry><entry thead="no"><para>Provide an appealing Visualization for air quality data gathered by an Arduino </para></entry></row>
+</table>
+<table rows="5" cols="2"><row>
+<entry thead="yes"><para>User steps:</para></entry><entry thead="yes"><para>description below  </para></entry></row>
+<row>
+<entry thead="no"><para>Users:</para></entry><entry thead="no"><para>Air quality Researchers </para></entry></row>
+<row>
+<entry thead="no"><para>Pre-Conditions</para></entry><entry thead="no"><para>User is logged in, and uploads a .csv file with the correct header format </para></entry></row>
+<row>
+<entry thead="no"><para>Post-Conditions</para></entry><entry thead="no"><para>User does not leave the page or log out. User data is formatted to make a visualization </para></entry></row>
+<row>
+<entry thead="no"><para>Frequency of Use</para></entry><entry thead="no"><para>Up to user-&gt;Good idea to gather significant data prior </para></entry></row>
+</table>
+<heading level="6">Flow of Events:</heading>
+</para><para>|Actor Action|System Response|Comments| -----------------------------<mdash/>|:--------------------------------------<mdash/>:|:---------------------------<mdash/>:| |1.Register for a account|Won&apos;t know until login| |2.Login with email+password|Take user to the home page| |3.Upload a formatted.csv file|Inform user if .csv is formatted correctly|must be .csv w/ right formatting |4.View visualization|Display visualization</para><para>Test Pass?|Pass/Fail| -------<mdash/>|------<mdash/>| </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="auth_8php" kind="file"><name>auth.php</name>
+  </compound>
+  <compound refid="_b_l___j_s_o_n_8php" kind="file"><name>BL_JSON.php</name>
+    <member refid="_b_l___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kind="variable"><name>$myquery</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kind="variable"><name>$rows1</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1aece741d5099bb229e07df7a57776cfaa" kind="variable"><name>$rows1</name></member>
+    <member refid="_b_l___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="_b_m_p___j_s_o_n_8php" kind="file"><name>BMP_JSON.php</name>
+    <member refid="_b_m_p___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1ac5c30f6dfc50952f15ca50a2a3d1a3c8" kind="variable"><name>$myquery</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a9d560e904e6665a6ee21f86a65c1ef8e" kind="variable"><name>$rows</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a6384d385f2f9c3f6bcad27ed87e67106" kind="variable"><name>$rows</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kind="variable"><name>$rows1</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1aece741d5099bb229e07df7a57776cfaa" kind="variable"><name>$rows1</name></member>
+    <member refid="_b_m_p___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="_b_m_p___t_e_m_p___j_s_o_n_8php" kind="file"><name>BMP_TEMP_JSON.php</name>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kind="variable"><name>$myquery</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a9d560e904e6665a6ee21f86a65c1ef8e" kind="variable"><name>$rows</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a6384d385f2f9c3f6bcad27ed87e67106" kind="variable"><name>$rows</name></member>
+    <member refid="_b_m_p___t_e_m_p___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="_c_o2___j_s_o_n_8php" kind="file"><name>CO2_JSON.php</name>
+    <member refid="_c_o2___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kind="variable"><name>$myquery</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a9d560e904e6665a6ee21f86a65c1ef8e" kind="variable"><name>$rows</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a6384d385f2f9c3f6bcad27ed87e67106" kind="variable"><name>$rows</name></member>
+    <member refid="_c_o2___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="data_services_8php" kind="file"><name>dataServices.php</name>
+    <member refid="data_services_8php_1add1bb3a6ddd16413aa3c25c7002833e7" kind="variable"><name>PHP</name></member>
+    <member refid="data_services_8php_1a5e92bb37ab892f2f238ed28c5c2c40d2" kind="variable"><name>$uploaded</name></member>
+    <member refid="data_services_8php_1a933f9857f8ebf67bd680066a512f38ba" kind="variable"><name>processed</name></member>
+  </compound>
+  <compound refid="db_8php" kind="file"><name>db.php</name>
+    <member refid="db_8php_1a0d9c79b9b86b3f5891c6d3892f12c6a0" kind="variable"><name>$connection</name></member>
+    <member refid="db_8php_1ae4ab08279bc5a147a42eb8409feece2e" kind="variable"><name>$select_db</name></member>
+  </compound>
+  <compound refid="_e2___j_s_o_n_8php" kind="file"><name>E2_JSON.php</name>
+    <member refid="_e2___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_e2___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_e2___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_e2___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_e2___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_e2___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kind="variable"><name>$myquery</name></member>
+    <member refid="_e2___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_e2___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kind="variable"><name>$rows1</name></member>
+    <member refid="_e2___j_s_o_n_8php_1aece741d5099bb229e07df7a57776cfaa" kind="variable"><name>$rows1</name></member>
+    <member refid="_e2___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="_f_i_g__210___j_s_o_n_8php" kind="file"><name>FIG_210_JSON.php</name>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kind="variable"><name>$myquery</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kind="variable"><name>$rows1</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1aece741d5099bb229e07df7a57776cfaa" kind="variable"><name>$rows1</name></member>
+    <member refid="_f_i_g__210___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="_f_i_g__280___j_s_o_n_8php" kind="file"><name>FIG_280_JSON.php</name>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kind="variable"><name>$myquery</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a15da33e0f4006a60bff01708cb5d1428" kind="variable"><name>$rows1</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1aece741d5099bb229e07df7a57776cfaa" kind="variable"><name>$rows1</name></member>
+    <member refid="_f_i_g__280___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="logout_8php" kind="file"><name>logout.php</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_s_h_t25___j_s_o_n_8php" kind="file"><name>SHT25_JSON.php</name>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a8bf9ffb42ed554b203b55377d1fc9aa4" kind="variable"><name>$hostname</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a0eb82aa5f81cf845de4b36cd653c42cf" kind="variable"><name>$username</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a607686ef9f99ea7c42f4f3dd3dbb2b0d" kind="variable"><name>$password</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a013f690a9cf598d1498e72aa8aa8a8d2" kind="variable"><name>$dbhandle</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a3a00cb9dd022e8ab0cdfe17aad984a14" kind="variable"><name>$selectdatabase</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a8ff37acfddb2efb7962bb94d1c6d0d1c" kind="variable"><name>$myquery</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1af59a5f7cd609e592c41dc3643efd3c98" kind="variable"><name>$query</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a9d560e904e6665a6ee21f86a65c1ef8e" kind="variable"><name>$rows</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a6384d385f2f9c3f6bcad27ed87e67106" kind="variable"><name>$rows</name></member>
+    <member refid="_s_h_t25___j_s_o_n_8php_1a9148136d1e11f768be4f805d7e567da2" kind="variable"><name>$result</name></member>
+  </compound>
+  <compound refid="signin_8php" kind="file"><name>signin.php</name>
+  </compound>
+  <compound refid="signup_8php" kind="file"><name>signup.php</name>
+  </compound>
+  <compound refid="_testing_8md" kind="file"><name>Testing.md</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="md_Testing" kind="page"><name>md_Testing</name>
+  </compound>
+  <compound refid="bug" kind="page"><name>bug</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Semester Project Auto docs</title>
+    <detaileddescription>
+<para>Documentation for AQIQ project. These docs contain the documentation for our project. <simplesect kind="author"><para>Jeremy Udis </para></simplesect>
+<simplesect kind="author"><para>Drew Meyers </para></simplesect>
+<simplesect kind="author"><para>James Draper </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+<simplesect kind="date"><para>2016 </para></simplesect>
+<simplesect kind="pre"><para>First initialize the system. </para></simplesect>
+<xrefsect id="bug_1_bug000001"><xreftitle>Bug</xreftitle><xrefdescription><para>Some issues fetching the json data for certain fields. </para></xrefdescription></xrefsect><simplesect kind="warning"><para>Not a finished product. </para></simplesect>
+<simplesect kind="copyright"><para>GNU Public License. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>
